@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1930">
+  <title>SailorSpot — A clearer way to plan a yacht holiday</title>
+  <meta name="description" content="Explore SailorSpot, an independent yacht discovery and charter-planning project by Karol Cybul. See real prototype screens and the proposed business activity.">
+  <meta property="og:title" content="SailorSpot — A clearer way to plan a yacht holiday">
+  <meta property="og:description" content="A look inside the mobile prototype: map-based discovery, yacht details and a simulated booking journey. Project overview by Karol Cybul.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://kcybul.github.io/sailorspot-showcase/">
+  <meta property="og:image" content="https://kcybul.github.io/sailorspot-showcase/assets/app-yacht.jpg">
+  <meta property="og:image:alt" content="SailorSpot prototype showing a catamaran, yacht specifications and a test-mode notice">
+  <link rel="canonical" href="https://kcybul.github.io/sailorspot-showcase/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header wrap">
+    <a class="brand" href="#" aria-label="SailorSpot home">
+      <svg viewBox="0 0 36 36" aria-hidden="true"><path d="M18 3v24H4L18 3Zm4 7 10 17H22V10Z" fill="currentColor"/><path d="M4 31h28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+      SailorSpot<span class="brand-dot">.</span>
+    </a>
+    <nav aria-label="Main navigation"><a href="#experience">The app</a><a href="#overview">Project overview <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> An independent project · In development</p>
+        <h1 id="hero-title">Your next voyage.<br><em>A clearer starting point.</em></h1>
+        <p class="hero-description">Discover yachts by their home marina, explore the details, and plan your charter week. SailorSpot brings the journey together in one mobile app.</p>
+        <div class="hero-actions"><a class="button primary" href="#experience">Explore the app <span aria-hidden="true">↓</span></a><a class="text-link" href="#overview">Read the project overview <span aria-hidden="true">↗</span></a></div>
+        <div class="hero-note"><span class="note-line" aria-hidden="true"></span><p>A working iOS prototype, currently in TestFlight.<br>Presented here with actual app screenshots.</p></div>
+      </div>
+      <div class="hero-visual">
+        <div class="chart-art" aria-hidden="true"><span class="compass-north">N</span><span class="chart-cross cross-one">+</span><span class="chart-cross cross-two">+</span><span class="chart-label">FIND YOUR NEXT ESCAPE</span></div>
+        <div class="visual-caption"><span>01 / DISCOVER</span><span>From map to marina</span></div>
+        <div class="hero-phone"><img src="assets/app-map.jpg" width="588" height="1280" alt="SailorSpot map showing yacht clusters and a yacht preview near its home marina" fetchpriority="high"></div>
+        <div class="visual-tag"><span class="tag-icon" aria-hidden="true">↗</span><span>Start with a place.<br><strong>Find your yacht.</strong></span></div>
+      </div>
+    </section>
+
+    <section class="intro-strip" aria-label="Product at a glance"><div class="wrap intro-grid"><p>A simpler path<br><strong>from inspiration to planning.</strong></p><div><span class="step-number">01</span><span>Explore by marina</span></div><div><span class="step-number">02</span><span>Get to know the yacht</span></div><div><span class="step-number">03</span><span>Review your charter</span></div></div></section>
+
+    <section class="experience wrap section-space" id="experience" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">Inside SailorSpot</p><h2 id="experience-title">The journey, on screen.</h2></div><p>Three moments from the working prototype.<br>Select a screenshot to see the full detail.</p></div>
+      <div class="screens-grid">
+        <article class="screen-card">
+          <div class="screen-stage stage-map"><button class="screenshot-button" type="button" data-image="assets/app-map.jpg" data-title="01 · Discover yachts by marina" aria-label="Enlarge map and yacht discovery screenshot"><img src="assets/app-map.jpg" width="588" height="1280" alt="Map-based yacht discovery with region counts, Map and List controls, and a yacht preview" loading="lazy"><span class="enlarge"><span aria-hidden="true">⤢</span> View screen</span></button></div>
+          <div class="screen-copy"><p class="eyebrow">01 / Discover</p><h3>A place to begin.</h3><p>Explore home marinas on the map, browse yachts in the visible area, and move between map and list views.</p><p class="screen-detail">Map counts show yachts, not confirmed availability.</p></div>
+        </article>
+        <article class="screen-card">
+          <div class="screen-stage stage-yacht"><button class="screenshot-button" type="button" data-image="assets/app-yacht.jpg" data-title="02 · Explore the yacht" aria-label="Enlarge yacht details screenshot"><img src="assets/app-yacht.jpg" width="588" height="1280" alt="Blue Buddha Prem catamaran with photo gallery, home marina, 12 guests, 4 cabins and 12.8 metre length; test mode is clearly marked" loading="lazy"><span class="enlarge"><span aria-hidden="true">⤢</span> View screen</span></button></div>
+          <div class="screen-copy"><p class="eyebrow">02 / Explore</p><h3>See the whole picture.</h3><p>Browse yacht photos, compare cabins and capacity, check the home marina, and choose a charter week.</p><p class="screen-detail">Availability and pricing currently use a test mode.</p></div>
+        </article>
+        <article class="screen-card">
+          <div class="screen-stage stage-booking"><button class="screenshot-button" type="button" data-image="assets/app-booking.jpg" data-title="03 · Review a simulated booking" aria-label="Enlarge simulated booking screenshot"><img src="assets/app-booking.jpg" width="588" height="1280" alt="Test booking for Yepa II with dates, simulated charter and required charges totalling EUR 1,950, and a booking timeline" loading="lazy"><span class="enlarge"><span aria-hidden="true">⤢</span> View screen</span></button></div>
+          <div class="screen-copy"><p class="eyebrow">03 / Review</p><h3>The details, together.</h3><p>Review dates, the charter price, required charges and booking status in one place, with details recorded at booking.</p><p class="screen-detail">The example is simulated: no reservation or payment.</p></div>
+        </article>
+      </div>
+      <div class="prototype-note"><span class="note-symbol" aria-hidden="true">i</span><p><strong>Real screens. Demonstration data.</strong> These screenshots were supplied by the project owner. They document the prototype; displayed yachts, counts, dates and prices are examples, not current offers.</p></div>
+      <noscript><p>Full-size screenshots: <a href="assets/app-map.jpg">Map</a> · <a href="assets/app-yacht.jpg">Yacht details</a> · <a href="assets/app-booking.jpg">Test booking</a>.</p></noscript>
+    </section>
+
+    <section class="overview" id="overview" aria-labelledby="overview-title"><div class="wrap overview-grid">
+      <div class="overview-heading"><p class="eyebrow">Project overview</p><h2 id="overview-title">An idea with<br>a working foundation.</h2><p>SailorSpot is an independent software project by <strong>Karol Cybul</strong>, focused on making yacht discovery and charter planning easier to understand.</p><a class="text-link light" href="mailto:captain@sailorspot.ch">Contact the project owner <span aria-hidden="true">↗</span></a></div>
+      <dl class="overview-facts">
+        <div><dt>Proposed activity</dt><dd>Develop and operate a digital service that helps travellers discover charter yachts, compare vessel information, and progress through a booking journey.</dd></div>
+        <div><dt>Intended users</dt><dd>Travellers and sailing enthusiasts planning a yacht holiday, including people who want to explore destinations before selecting a yacht.</dd></div>
+        <div><dt>Current stage</dt><dd>Early development. An iOS prototype is distributed to testers through TestFlight. The booking flow currently uses simulated availability and prices; it does not create a real charter reservation or take payment.</dd></div>
+        <div><dt>Before public launch</dt><dd>Complete commercial supplier arrangements, enable production availability and booking integrations, and finalise the customer terms and operational processes.</dd></div>
+      </dl>
+    </div></section>
+
+    <section class="review-notes wrap section-space" aria-labelledby="notes-title"><div><p class="eyebrow">A transparent look at the project</p><h2 id="notes-title">Built to be understood.</h2><p>This public presentation provides a concise reference for anyone reviewing the proposed activity. No app installation or account is needed to view it.</p></div><div class="notes-list"><details open><summary>Is SailorSpot open for real bookings?</summary><p>No. This is a development-stage project. The screenshots show a test booking flow, with no real reservation or payment. This website is a presentation only.</p></details><details><summary>What does this website collect?</summary><p>There are no account forms, analytics scripts or advertising trackers on this page. GitHub Pages hosts the site and may process technical request information under <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub’s privacy statement</a>. Contacting the project owner opens your own email application.</p></details><details><summary>Who can answer questions about the project?</summary><p>Karol Cybul, project owner. Email <a href="mailto:captain@sailorspot.ch">captain@sailorspot.ch</a> for questions about the proposed activity or the prototype.</p></details></div></section>
+
+    <section class="contact wrap" aria-label="Contact"><div><p class="eyebrow">Let’s talk about SailorSpot</p><h2>A closer look starts<br>with a conversation.</h2></div><a class="button primary" href="mailto:captain@sailorspot.ch">captain@sailorspot.ch <span aria-hidden="true">↗</span></a></section>
+  </main>
+
+  <footer class="wrap"><a class="brand footer-brand" href="#">SailorSpot<span class="brand-dot">.</span></a><p>Project by Karol Cybul · September 2026</p><a href="#overview">Development-stage project <span aria-hidden="true">↗</span></a></footer>
+
+  <dialog id="screenshot-dialog" aria-labelledby="dialog-title"><div class="dialog-toolbar"><h2 id="dialog-title">App screenshot</h2><button type="button" class="close-dialog" aria-label="Close screenshot">Close <span aria-hidden="true">×</span></button></div><div class="dialog-image-wrap"><img id="dialog-image" alt="" width="588" height="1280"></div></dialog>
+</body>
+</html>
