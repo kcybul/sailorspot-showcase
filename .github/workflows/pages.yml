@@ -13,7 +13,30 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 8
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+      - name: Verify the charter enquiry journey on desktop and mobile
+        run: npm run test:enquiry
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: enquiry-browser-diagnostics
+          path: |
+            playwright-report/
+            test-results/
+          retention-days: 7
+
   deploy:
+    needs: validate
     runs-on: ubuntu-latest
     timeout-minutes: 5
     permissions:
@@ -31,6 +54,8 @@ jobs:
           mkdir _site
           cp index.html styles.css app.js .nojekyll _site/
           cp -R assets _site/assets
+          mkdir _site/plan
+          cp plan/index.html plan/styles.css plan/app.js plan/form-model.mjs _site/plan/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

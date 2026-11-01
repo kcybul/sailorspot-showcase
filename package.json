@@ -1,0 +1,15 @@
+{
+  "name": "sailorspot-showcase",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "playwright test",
+    "test:enquiry": "playwright test tests/enquiry.spec.js",
+    "test:enquiry:live": "playwright test tests/enquiry-live.spec.js",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
