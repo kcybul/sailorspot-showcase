@@ -2,7 +2,14 @@
 
 A public, informational presentation of the SailorSpot mobile prototype and proposed activity. It is not a booking service. Prices, availability and bookings shown in screenshots are demonstration data. Revenue details are intentionally omitted.
 
-**Website:** https://kcybul.github.io/sailorspot-showcase/
+**Live website:** https://sailorspot.pearly-pine-6119.chatgpt.site/
+
+**Charter enquiries:** https://sailorspot.pearly-pine-6119.chatgpt.site/plan/
+
+This repository remains the public source. The live website is published through
+OpenAI Sites independently of GitHub Actions. GitHub Pages remains an optional
+mirror; its `/plan/` deployment has not completed. Managed deployment copies only
+public files and adjusts canonical URLs and the hosting-provider privacy notice.
 
 ## Content
 
@@ -12,7 +19,7 @@ A public, informational presentation of the SailorSpot mobile prototype and prop
 - `assets/`: three original screenshots and the site icon.
 - `plan/`: a Croatia charter-planning enquiry page, with its own privacy notice.
 
-The original project overview has no forms or analytics. The separate [charter-planning pilot](https://kcybul.github.io/sailorspot-showcase/plan/) submits enquiries and anonymous session visit counts to `https://api.sailorspot.ch`. It does not confirm live prices, availability or bookings, and takes no payment. Contact details are not saved in browser storage. The private SailorSpot repository contains the durable enquiry service and its operating runbook.
+The original project overview has no forms or analytics. The separate [charter-planning pilot](https://sailorspot.pearly-pine-6119.chatgpt.site/plan/) submits enquiries and anonymous session visit counts to `https://api.sailorspot.ch`. It does not confirm live prices, availability or bookings, and takes no payment. Contact details are not saved in browser storage. The private SailorSpot repository contains the durable enquiry service and its operating runbook.
 
 Both pages are static HTML, CSS and JavaScript, without a production framework or third-party scripts. Node dependencies are used only for browser acceptance tests.
 
